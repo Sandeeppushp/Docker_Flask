@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  helloworld:
+    build:
+      context: ./
+    ports:
+      - 9000:9000
