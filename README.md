@@ -1,1 +1,59 @@
 # Docker_Flask
+
+to build image (will replace everytime for same image)
+sudo docker build -t docker-flask-test .
+
+to show all docker images:
+sudo docker image ls
+
+to remove docker images:
+sudo docker rmi -f docker-flask-test
+
+start docker application
+#first external 9000  and second internal system port
+sudo docker run -p 9000:9000 -d docker-flask-test
+
+to stop docker:
+docker stop <container_id>
+
+
+to show all running containers:
+sudo docker ps
+
+to view logs realtime:
+sudo docker logs -f <CONTAINER>
+
+to get into container shell:
+sudo docker exec -it <container_id> bash
+
+Copy file to container:
+docker cp foo.txt container_id:/foo.txt
+
+Copy file from container:
+docker cp container_id:/foo.txt foo.txt
+
+
+
+
+-------------------------------------------------------------------------------------------------
+
+to remove all resources:
+#it will delete all docker images and containers
+sudo docker system prune
+
+
+
+To check all docker container running:
+sudo docker ps -a
+
+To kill docker container:
+sudo docker rm -f container_id
+
+
+
+Save docker image:
+docker save -o <path for generated tar file> <image name>
+
+
+load docker image:
+docker load -i <path to image tar file>
