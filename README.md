@@ -1,6 +1,6 @@
 # Docker_Flask
 
-to build image (will replace everytime for same image)\n
+to build image (will replace everytime for same image)<br>
 sudo docker build -t docker-flask-test .
 
 to show all docker images:
