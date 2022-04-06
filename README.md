@@ -3,6 +3,9 @@
 to build image (will replace everytime for same image)<br>
 sudo docker build -t docker-flask-test .
 
+to recreate image force<br>
+docker-compose up --force-recreate
+
 to show all docker images:<br>
 sudo docker image ls
 
