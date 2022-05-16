@@ -1,5 +1,8 @@
 # Docker_Flask
 
+To start docker automatically on system restart<br>
+sudo docker run -dit --restart unless-stopped docker-flask-test
+
 to build image (will replace everytime for same image)<br>
 sudo docker build -t docker-flask-test .
 
